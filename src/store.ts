@@ -30,7 +30,7 @@ function reducer(state = initialState, action: ActionType): ItemState {
                 items: [...state.items, { name: action.payload, isDone: false }]
             };
         case 'remove':
-                state.items.splice(action.payload, 1)
+            state.items.splice(action.payload, 1)
             return {
                 ...state,
                 items: [...state.items]
