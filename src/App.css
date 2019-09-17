@@ -1,33 +1,110 @@
 .App {
   text-align: center;
+  font-family: "Open Sans", sans-serif;
+  width: 340px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+body {
+  background: linear-gradient(
+      135deg,
+      hsla(33.13, 98.56%, 46.27%, 1) 0%,
+      hsla(33.13, 98.56%, 46.27%, 0) 70%
+    ),
+    linear-gradient(
+      25deg,
+      hsla(302.85, 98.06%, 45.77%, 1) 10%,
+      hsla(302.85, 98.06%, 45.77%, 0) 80%
+    ),
+    linear-gradient(
+      315deg,
+      hsla(283.78, 90.2%, 48.3%, 1) 15%,
+      hsla(283.78, 90.2%, 48.3%, 0) 80%
+    ),
+    linear-gradient(
+      245deg,
+      hsla(309.21, 91.18%, 40.6%, 1) 100%,
+      hsla(309.21, 91.18%, 40.6%, 0) 70%
+    );
+  background-repeat: no-repeat;
+  height: 1000px;
+}
+h3 {
+  color: white;
+  margin: 5px 0px;
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+  font-weight: 800;
+  color: coral;
+  cursor: pointer;
+}
+.add-button {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(184, 51, 84);
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  background: transparent;
+}
+.done {
+  text-decoration: line-through;
+  color: #788181;
+}
+ul {
+  text-align: left;
+  margin-top: 20px;
+  height: 100%;
+}
+li {
+  font-size: 12px;
+  text-align: left;
+  list-style: none;
+  text-transform: capitalize;
+  margin: 10px 30px;
+  border-bottom: #025f70 1px solid;
+}
+input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 1px solid rgb(184, 51, 84);
+  padding: 5px 0px;
+  margin-bottom: 10px;
+  background: transparent;
+}
+input,
+textarea {
+  color: #ff0000;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+textarea:focus,
+input:focus {
+  outline: none;
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+span {
+  color: white;
+}
+.input-container {
+  max-width: 300px;
+  min-height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  background: #ffffff;
+  border: 1px solid white;
+  border-radius: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+li > button {
+  float: right;
+  color: #025f70;
+  font-weight: 800;
+  cursor: pointer;
 }
